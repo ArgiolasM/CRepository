@@ -4,11 +4,13 @@
 #include <string.h>
 #include <stdlib.h>
 
+
 void parse(int numArg, char* argument[], float *v1, float *v2, char *op);
 
 void elabora(float v1, float v2, char o, float *r);
 
 void visualizza(float v1, float v2, char o, float r);
+/*prova*/
 
 int main(int argc, char* argv[]){
 	float n1,n2;
@@ -55,5 +57,5 @@ void elabora(float v1, float v2, char o, float *r){
 
 
 void visualizza(float v1, float v2, char o, float r){
-	printf("\n%f %c %f = %f\n",v1,o,v2,r);
+	printf("\n%.2f %c %.2f = %.2f\n",v1,o,v2,r);
 }	
